@@ -1,0 +1,64 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Values",
+            "name": "valueText",
+            "kind": "GroupingOrMeasure",
+            "description": "First value is top text row, second is bottom text row"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions" : [
+                { "valueText": { "max": 2 } }
+            ],
+            "table": {
+                "rows": {
+                    "for": {"in": "valueText" },
+                    "dataReductionAlgorithm": {
+                        "top": {"count": 1 }
+                    }
+                }
+            }
+        }
+    ],
+    "objects": {
+        "settings": {
+            "displayName": "Settings",
+            "properties": {
+                "topColor": {
+                    "displayName": "Top Text color",
+                    "displayNameKey": "Visual_DefaultColorData",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "bottomColor": {
+                    "displayName": "Bottom Text Color",
+                    "displayNameKey": "Visual_DefaultColorDesc",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },                
+                "topSizePercent": {
+                    "displayName": "Top Text %",
+                    "displayNameKey": "Visual_TopHeight",
+                    "type": {"integer": true}
+                },
+                "maxHeightPercent": {
+                    "displayName": "Max Height %",
+                    "displayNameKey": "Visual_MaxHeight",
+                    "type": {"integer": true}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "visual": {
+    "name": "Banner",
+    "displayName": "Banner",
+    "guid": "bigTextCard84D32AD0A35646E092B41DC4EB164437",
+    "visualClassName": "Banner",
+    "version": "1.0.0",
+    "description": "Displays a value in font sizes larger than 40 points, up to the height of the banner.",
+    "supportUrl": "",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "1.10.0",
+  "author": {
+    "name": "cpcodes",
+    "email": "30065410+cpcodes@users.noreply.github.com"
+  },
+  "assets": {
+    "icon": "assets/banner-icon.png"
+  },
+  "externalJS": [
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js",
+    "node_modules/d3/d3.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}
