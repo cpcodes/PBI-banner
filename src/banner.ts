@@ -81,10 +81,6 @@ module powerbi.extensibility.visual {
                     this.settings.topSizePercent = this.getValue<number>(dmObjects, "settings", "topSizePercent", this.settings.topSizePercent);
                     this.settings.maxHeightPercent = this.getValue<number>(dmObjects, "settings", "maxHeightPercent", this.settings.maxHeightPercent);
             }
-            // this.settings.bottomColor = dmoSettings["bottomColor"].toString() || this.settings.bottomColor;
-            // this.settings.topColor = dmoSettings["topColor"].toString() || this.settings.topColor;
-            // this.settings.topSizePercent = Number(dmoSettings["topSizePercent"]) || this.settings.topSizePercent;
-            // this.settings.maxHeightPercent = Number(dmoSettings["maxHeightPercent"]) || this.settings.topSizePercent;
         }
 
         private getTextColor<T>(settings: DataViewObject, textName: string, defaultValue: T ): T {
